@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODIN Sign Up Form</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Norse:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="image-sidebar">
+            <div class="logo-container">
+                <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="Odin Logo" class="logo">
+                <h1 class="logo-text">ODIN</h1>
+            </div>
+        </div>
+        
+        <div class="form-container">
+            <div class="form-header">
+                <h2>Welcome to the Odin project where we help you realize your deepest dreams in web development.</h2>
+                <h2>Sign up <em>now</em> to get started.</h2>
+                <h3>Keep <em>pushing</em> Hard.</h3>
+            </div>
+            
+            <form id="signup-form">
+                <div class="form-content">
+                    <h3>Let's do this!</h3>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" id="first-name" name="first-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" id="last-name" name="last-name" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" name="password" required class="error">
+                            <span class="error-message" id="password-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirm-password">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirm-password" name="confirm-password" required>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-footer">
+                    <button type="submit" class="btn-create-account">Create Account</button>
+                    <p>Already have an account? <a href="#" class="login-link">Log in</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>
